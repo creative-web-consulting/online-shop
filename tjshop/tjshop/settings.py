@@ -15,6 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+CART_SESSION_ID = 'cart'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
 
     # Local
     'shop.apps.ShopConfig',
+    'cart.apps.CartConfig',
 ]
 
 MEDIA_URL = '/media/'
