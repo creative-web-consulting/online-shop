@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # Local
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
+    'orders.apps.OrdersConfig',
 ]
 
 MEDIA_URL = '/media/'
