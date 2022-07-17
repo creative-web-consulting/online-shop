@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+import braintree
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -27,6 +29,18 @@ SECRET_KEY = 'u_dj$f21@zxj92^6_ea^fj+akde0r8rlkrex)!w@%j9ql9cpi9'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+# Braintree settings
+BRAINTREE_MERCHANT_ID = 'x946cxpsjv5r2n7y'  # Merchant ID
+BRAINTREE_PUBLIC_KEY = 'rxg2nq348xt569gb'  # Public Key
+BRAINTREE_PRIVATE_KEY = '4b6bda6566edbe26086a031db536dc9a'  # Private key
+
+BRAINTREE_CONF = braintree.Configuration(
+    braintree.Environment.Sandbox,
+    BRAINTREE_MERCHANT_ID,
+    BRAINTREE_PUBLIC_KEY,
+    BRAINTREE_PRIVATE_KEY
+)
 
 # SMTP server configuration for sending emails via Gmail servers using a Google account:
 EMAIL_HOST = 'smtp.gmail.com'
@@ -50,6 +64,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MEDIA_URL = '/media/'
