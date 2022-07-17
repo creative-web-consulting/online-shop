@@ -28,6 +28,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# SMTP server configuration for sending emails via Gmail servers using a Google account:
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'bosco.hjf@gmail.com'
+EMAIL_HOST_PASSWORD = '48fanomezantsoa97'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 
 # Application definition
 
