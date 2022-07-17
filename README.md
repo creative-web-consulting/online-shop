@@ -1,8 +1,18 @@
 # online-shop
 
 ##### Install RabbitMQ in your machine
+If you are using Linux, you can install RabbitMQ from the shell using the following 
+command:
 
-##### Open a shell and run RabbitMQ with the following command:
+```
+    apt-get install rabbitmq
+```
+If you need to install RabbitMQ on macOS or Windows, you can find standalone 
+versions at https://www.rabbitmq.com/download.html. On this site, you can also 
+find detailed installation guides for different Linux distributions, other operating 
+systems, and containers.
+After installing it, launch RabbitMQ using the following command from the shell:
+
 ```
     rabbitmq-server
 ```
