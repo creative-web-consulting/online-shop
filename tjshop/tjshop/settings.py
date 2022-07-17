@@ -31,9 +31,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # Braintree settings
-BRAINTREE_MERCHANT_ID = 'x946cxpsjv5r2n7y'  # Merchant ID
-BRAINTREE_PUBLIC_KEY = 'rxg2nq348xt569gb'  # Public Key
-BRAINTREE_PRIVATE_KEY = '4b6bda6566edbe26086a031db536dc9a'  # Private key
+BRAINTREE_MERCHANT_ID = 'Your Merchant ID here'  # Merchant ID
+BRAINTREE_PUBLIC_KEY = 'Your Public Key here'  # Public Key
+BRAINTREE_PRIVATE_KEY = 'Your Private Key here'  # Private key
 
 BRAINTREE_CONF = braintree.Configuration(
     braintree.Environment.Sandbox,
@@ -44,8 +44,8 @@ BRAINTREE_CONF = braintree.Configuration(
 
 # SMTP server configuration for sending emails via Gmail servers using a Google account:
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'bosco.hjf@gmail.com'
-EMAIL_HOST_PASSWORD = '48fanomezantsoa97'
+EMAIL_HOST_USER = 'your-host-user'
+EMAIL_HOST_PASSWORD = 'your-email-password'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 

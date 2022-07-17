@@ -22,6 +22,10 @@
     celery -A <your-project-name-here> flower
 ```
 
+##### Change the followings variables in the settings.py file for sending emails via Gmail servers using a Google account:
+    - EMAIL_HOST_USER = 'your-host-user'
+    - EMAIL_HOST_PASSWORD = 'your-email-password'
+
 ##### Create a Braintree sandbox account:
 1. Open *https://www.braintreepayments.com/sandbox* in your browser
 2. Fill in the details to [create a new sandbox account](https://www.braintreepayments.com/sandbox)
