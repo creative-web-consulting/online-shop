@@ -32,6 +32,8 @@ After installing it, launch RabbitMQ using the following command from the shell:
     celery -A <your-project-name-here> flower
 ```
 
+Then open http://localhost:5555/dashboard in your browser. You will be able to see the active Celery workers and asynchronous task statistics.
+
 ##### Change the followings variables in the settings.py file for sending emails via Gmail servers using a Google account:
     - EMAIL_HOST_USER = 'your-host-user'
     - EMAIL_HOST_PASSWORD = 'your-email-password'
