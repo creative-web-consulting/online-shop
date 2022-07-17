@@ -35,3 +35,14 @@
     - BRAINTREE_PRIVATE_KEY = 'Your Private Key here' 
 
 
+Run the following command as well to copy all static files from your applications into the 
+directory defined in the STATIC_ROOT setting. This allows each application to provide 
+its own static files using a static/ directory containing them:
+
+```
+    python manage.py collectstatic
+```
+
+*This project also requires installing WeasyPrint's dependencies for your operating system from https://weasyprint.readthedocs.io/en/latest/install.html*
+
+
